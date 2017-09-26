@@ -8,4 +8,4 @@ Part of the benefit of this is that you can leverage the Jenkins EC2 Plugin to s
 
 Once that's done, you can deploy the binaries to your application server - a t2.micro with 1GB swap works just fine. You can use another Jenkins job to run that bash script; just configure your application server to allow launching a build node over SSH.
 
-Before you run the server for the first time, you will need to configure your authserver.conf and worldserver.conf, specifically the database connection strings. For the purposes of this discussion, I'm assuming that you've set up your database server separately and that you've already done the initial database setup.
+Before you run the server for the first time, you will need to configure your authserver.conf and worldserver.conf, specifically the database connection strings. For the purposes of this discussion, I'm assuming that you've set up your database server separately and that you've already done the initial database setup. You may also want to set `Console.Enable` to 0 to avoid spamming syslog on your application server.

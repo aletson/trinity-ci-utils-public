@@ -11,3 +11,11 @@ sudo mkswap /var/swapfile
 sudo chmod 600 /var/swapfile
 sudo swapon /var/swapfile
 sudo echo "swap /var/swapfile swap defaults 0 0" >> /etc/fstab
+cat <<EOF > ~/.aws/credentials
+aws_access_key_id = YOUR_ACCESS_KEY_GOES_HERE
+aws_secret_access_key = YOUR_SECRET_KEY_GOES_HERE
+EOF
+cat <<EOG ~/.aws/config
+[default]
+region = YOUR_PRIMARY_AWS_REGION
+EOG

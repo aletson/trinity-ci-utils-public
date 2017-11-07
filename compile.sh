@@ -5,7 +5,7 @@
 
 now=`date +"%Y%m%d%H%M%S"`
 # System updates
-sudo apt-get update && sudo apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade -y
 
 # Get and build TC source
 cd ~

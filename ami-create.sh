@@ -2,8 +2,8 @@
 # This file should be run to prepare a VM for having an image taken
 # This should only need to be run once, then use the created image to spin up your build machine.
 # Remember to periodically run apt-get update && apt-get upgrade and recapture the image.
-sudo cat 'deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial-5.0 main' >> /etc/apt/sources.list
-sudo cat 'deb-src http://apt.llvm.org/xenial/ llvm-toolchain-xenial-5.0 main' >> /etc/apt/sources.list
+echo 'deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial-5.0 main' | sudo tee -a /etc/apt/sources.list
+echo 'deb-src http://apt.llvm.org/xenial/ llvm-toolchain-xenial-5.0 main' | sudo tee -a /etc/apt/sources.list
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install git cmake make clang-5.0 libmysqlclient-dev libssl-dev libbz2-dev libreadline-dev libncurses-dev libboost-all-dev p7zip zip

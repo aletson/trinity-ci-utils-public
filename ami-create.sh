@@ -9,6 +9,7 @@ sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/clang 100
 sudo apt-get install openjdk-8-jre # For Jenkins
 mkdir -p ~/.aws
 cat <<EOF > ~/.aws/credentials
+[default]
 aws_access_key_id = YOUR_ACCESS_KEY_GOES_HERE
 aws_secret_access_key = YOUR_SECRET_KEY_GOES_HERE
 EOF

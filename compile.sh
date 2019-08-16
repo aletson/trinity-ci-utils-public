@@ -1,7 +1,10 @@
 #!/bin/bash
+# Builds a .deb package for installation on your application server.
+# 
 # Use Jenkins to run this on your build server. I recommend configuring the EC2 Plugin
 # to let Jenkins spin up a spot instance rather than keeping your build server up 24/7.
 # Make sure the proper AWS S3 roles (read/write to bucket) are set on the server.
+# More on this here: https://ajl.io/lower-build-costs-jenkins-ec2/
 
 now=`date +"%Y%m%d%H%M%S"`
 # System updates

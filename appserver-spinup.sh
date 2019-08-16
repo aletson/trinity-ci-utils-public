@@ -1,6 +1,6 @@
 #!/bin/bash
 # This is the initial setup script for your application server
-# A t2.micro is plenty to be going on with
+# A t3.micro is plenty to be going on with, at least for a dev box
 # Recommend 30GB hard drive space.
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install wget python openjdk-8-jre awscli unzip libboost-all-dev libmysqlclient-dev mysql-client -y

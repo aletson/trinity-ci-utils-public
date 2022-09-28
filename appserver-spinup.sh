@@ -9,7 +9,7 @@ sudo update-alternatives --install /usr/bin/cc cc /usr/bin/clang 100
 sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/clang 100
 mkdir -p /var/lib/trinity
 sudo useradd trinity -d /var/lib/trinity -s /sbin/nologin
-sudo dd if=/dev/zero of=/var/swapfile bs=1M count=1024
+sudo dd if=/dev/zero of=/var/swapfile bs=1M count=4096
 sudo mkswap /var/swapfile
 sudo chmod 600 /var/swapfile
 sudo swapon /var/swapfile

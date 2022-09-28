@@ -2,7 +2,7 @@
 # This is the initial setup script for your application server
 # A t3.micro is plenty to be going on with, at least for a dev box
 # Recommend 30GB hard drive space.
-sudo apt-get update && sudo apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install wget python openjdk-8-jre awscli unzip libboost-all-dev -y
 sudo apt-get install git clang cmake make gcc g++ libmysqlclient-dev libssl-dev libbz2-dev libreadline-dev libncurses-dev mysql-server p7zip -y
 sudo update-alternatives --install /usr/bin/cc cc /usr/bin/clang 100

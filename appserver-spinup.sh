@@ -5,8 +5,6 @@
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install wget python openjdk-8-jre awscli unzip libboost-all-dev -y
 sudo apt-get install git clang cmake make gcc g++ libmysqlclient-dev libssl-dev libbz2-dev libreadline-dev libncurses-dev mysql-server p7zip -y
-sudo update-alternatives --install /usr/bin/cc cc /usr/bin/clang 100
-sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/clang 100
 mkdir -p /var/lib/trinity
 sudo useradd trinity -d /var/lib/trinity -s /sbin/nologin
 sudo dd if=/dev/zero of=/var/swapfile bs=1M count=4096
